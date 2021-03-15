@@ -6,7 +6,9 @@ while n <= 3:
         print('登入成功')
         break
     else:
-        print('密碼錯誤! 還有', 3-n, '次機會')
+    	if n < 3 :
+    	    print('密碼錯誤! 還有', 3-n, '次機會')
+    	else:
+    		print('登入失敗, 請用原信箱重設密碼')
     n += 1
-if n > 3:
-    print('登入失敗, 請用原信箱重設密碼')
+    
